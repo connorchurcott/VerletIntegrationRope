@@ -1,11 +1,6 @@
 # **Verlet Integration Rope Simulation**
 A Unity implementation of a Verlet integration rope simulation
 
-- FAST corner detection: Custom implementation using 16-point Bresenham circle tests with configurable threshold t and contiguous pixel count n. Non-maximum suppression via local score maximization
-- Harris cornerness scoring: Filters FAST corners using second-moment matrix estimation with Sobel gradients and Gaussian weighting, improving corner quality and reducing false positives
-- Feature description & matching: ORB descriptors extracted at Harris-filtered keypoints, matched across image pairs using MATLAB's matchFeatures
-- RANSAC homography: Projective transform estimated with estgeotform2d, robust to outlier matches, used to warp and blend the second image into a shared panorama canvas
-
 # **What I Implemented**
 
 - Verlet integration to update particle positions each timestep using current and previous positions
